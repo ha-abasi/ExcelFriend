@@ -30,7 +30,7 @@ namespace ExcelFriend
             string cellDestination = "";
             if (txtPath.Text == "")
             {
-                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید");
+                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید","Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -65,7 +65,7 @@ namespace ExcelFriend
             string cellDestination = "";
             if (txtPath.Text == "")
             {
-                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید");
+                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -253,7 +253,7 @@ namespace ExcelFriend
             string cellDestination = "";
             if (txtPath.Text == "")
             {
-                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید");
+                MessageBox.Show("لطفا مسیر فایل اکسل را انتخاب نمایید", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
