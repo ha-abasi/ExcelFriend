@@ -42,6 +42,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.cmbSheets = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btrnMiladiToShamsi = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,10 +52,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 173);
+            this.panel1.Location = new System.Drawing.Point(0, 215);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(480, 59);
+            this.panel1.Size = new System.Drawing.Size(655, 59);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -69,7 +70,7 @@
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Location = new System.Drawing.Point(380, 16);
+            this.btnExit.Location = new System.Drawing.Point(555, 16);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(88, 28);
@@ -82,12 +83,13 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btrnMiladiToShamsi);
             this.groupBox1.Controls.Add(this.btnAgeFromShamsi);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(15, 72);
+            this.groupBox1.Location = new System.Drawing.Point(15, 76);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(456, 94);
+            this.groupBox1.Size = new System.Drawing.Size(631, 132);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "تبدیل";
@@ -95,11 +97,12 @@
             // 
             // btnAgeFromShamsi
             // 
-            this.btnAgeFromShamsi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgeFromShamsi.Location = new System.Drawing.Point(5, 59);
+            this.btnAgeFromShamsi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgeFromShamsi.Location = new System.Drawing.Point(284, 61);
             this.btnAgeFromShamsi.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgeFromShamsi.Name = "btnAgeFromShamsi";
-            this.btnAgeFromShamsi.Size = new System.Drawing.Size(215, 28);
+            this.btnAgeFromShamsi.Size = new System.Drawing.Size(336, 28);
             this.btnAgeFromShamsi.TabIndex = 3;
             this.btnAgeFromShamsi.Text = "سن از طریق تاریخ شمسی";
             this.btnAgeFromShamsi.UseVisualStyleBackColor = true;
@@ -108,22 +111,23 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(230, 23);
+            this.button3.Location = new System.Drawing.Point(284, 23);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(215, 28);
+            this.button3.Size = new System.Drawing.Size(336, 28);
             this.button3.TabIndex = 2;
-            this.button3.Text = "تبدیل تاریخ شمسی به سال";
+            this.button3.Text = "تبدیل تاریخ شمسی به سال ماه و روز";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(7, 23);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 28);
+            this.button2.Size = new System.Drawing.Size(269, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "تبدیل تاریخ شمسی به میلادی";
             this.button2.UseVisualStyleBackColor = true;
@@ -146,13 +150,13 @@
             this.txtPath.Location = new System.Drawing.Point(57, 4);
             this.txtPath.Name = "txtPath";
             this.txtPath.ReadOnly = true;
-            this.txtPath.Size = new System.Drawing.Size(377, 23);
+            this.txtPath.Size = new System.Drawing.Size(552, 23);
             this.txtPath.TabIndex = 3;
             // 
             // btnPath
             // 
-            this.btnPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPath.Location = new System.Drawing.Point(441, 4);
+            this.btnPath.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnPath.Location = new System.Drawing.Point(619, 4);
             this.btnPath.Margin = new System.Windows.Forms.Padding(4);
             this.btnPath.Name = "btnPath";
             this.btnPath.Size = new System.Drawing.Size(27, 23);
@@ -183,11 +187,24 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Sheet : ";
             // 
+            // btrnMiladiToShamsi
+            // 
+            this.btrnMiladiToShamsi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btrnMiladiToShamsi.Location = new System.Drawing.Point(7, 61);
+            this.btrnMiladiToShamsi.Margin = new System.Windows.Forms.Padding(4);
+            this.btrnMiladiToShamsi.Name = "btrnMiladiToShamsi";
+            this.btrnMiladiToShamsi.Size = new System.Drawing.Size(269, 28);
+            this.btrnMiladiToShamsi.TabIndex = 4;
+            this.btrnMiladiToShamsi.Text = "تبدیل تاریخ میلادی به شمسی";
+            this.btrnMiladiToShamsi.UseVisualStyleBackColor = true;
+            this.btrnMiladiToShamsi.Click += new System.EventHandler(this.btrnMiladiToShamsi_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 232);
+            this.ClientSize = new System.Drawing.Size(655, 274);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbSheets);
             this.Controls.Add(this.btnPath);
@@ -226,6 +243,7 @@
         private System.Windows.Forms.Button btnAgeFromShamsi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btrnMiladiToShamsi;
     }
 }
 
